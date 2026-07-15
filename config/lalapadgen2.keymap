@@ -225,7 +225,7 @@
 &mo 3                  &kp GLOBE  &kp LEFT_ALT           &kp LANG2                      &shift_space LEFT_SHIFT SPACE  &lt 3 TAB      &kp LANG1                &bksp_lt_hp 2 BACKSPACE  &enter_lt 1 ENTER             &lt 12 SINGLE_QUOTE &none      &mkp MB1
                        &none      &kp RIGHT              &kp DOWN                       &kp LEFT   &kp UP         &kp UP         &kp LEFT                 &kp DOWN                      &kp RIGHT           &none
 &mkp LCLK              &mkp RCLK  &mkp MCLK                                                                                                                                             &mkp LCLK           &mkp RCLK  &mkp MCLK
-&kp LG(LBKT)               &kp LG(RBKT)   &kp LC(UP)             &kp LC(DOWN)                   &pinch_mac                                 &kp LG(LBKT)                 &kp LG(RBKT)                      &kp LC(UP)          &kp LC(DOWN) &pinch_mac
+&kp LG(RBKT)               &kp LG(LBKT)   &kp LC(UP)             &kp LC(DOWN)                   &pinch_mac                                 &kp LG(RBKT)                 &kp LG(LBKT)                      &kp LC(UP)          &kp LC(DOWN) &pinch_mac
             >;
         };
 
@@ -264,7 +264,7 @@
 &trans  &trans   &trans   &trans   &trans  &trans    &trans     &trans             &trans        &trans        &trans        &trans
         &trans   &trans   &trans   &trans  &trans    &trans     &trans             &trans        &trans        &trans
 &trans  &trans   &trans                                                                                        &trans        &trans           &trans
-&kp LC(LEFT)  &kp LC(RIGHT)  &trans  &trans  &trans               &kp LC(LEFT)  &kp LC(RIGHT)  &trans  &trans  &trans
+&kp LC(RIGHT)  &kp LC(LEFT)  &trans  &trans  &trans               &kp LC(RIGHT)  &kp LC(LEFT)  &trans  &trans  &trans
             >;
         };
 
@@ -277,7 +277,7 @@
 &mo 7               &kp GLOBE  &kp LEFT_ALT           &kp LANG2                      &shift_space LEFT_SHIFT SPACE  &lt 5 TAB      &kp LANG1         &lt 6 BACKSPACE               &lt 5 ENTER         &lt 12 SINGLE_QUOTE &none      &mkp MB1
                     &none      &kp RIGHT              &kp DOWN                       &kp LEFT   &kp UP         &kp UP         &kp LEFT          &kp DOWN                      &kp RIGHT           &none
 &mkp LCLK           &mkp RCLK  &mkp MCLK                                                                                                                                      &mkp LCLK           &mkp RCLK  &mkp MCLK
-&kp LG(LBKT)            &kp LG(RBKT)   &kp LC(UP)             &kp LC(DOWN)                   &pinch_mac                                 &kp LG(LBKT)          &kp LG(RBKT)                      &kp LC(UP)          &kp LC(DOWN) &pinch_mac
+&kp LG(RBKT)            &kp LG(LBKT)   &kp LC(UP)             &kp LC(DOWN)                   &pinch_mac                                 &kp LG(RBKT)          &kp LG(LBKT)                      &kp LC(UP)          &kp LC(DOWN) &pinch_mac
             >;
         };
 
@@ -329,7 +329,7 @@
 &mo 11                 &kp LEFT_ALT  &kp LEFT_GUI           &kp LANG2                      &shift_space LEFT_SHIFT SPACE  &lt 11 TAB       &kp LANG1                 &bksp_lt_hp 10 BACKSPACE  &enter_lt 9 ENTER  &lt 12 SINGLE_QUOTE &none      &mkp MB1
                        &none         &kp RIGHT              &kp DOWN                       &kp LEFT    &kp UP         &kp UP           &kp LEFT                  &kp DOWN              &kp RIGHT           &none
 &mkp LCLK              &mkp RCLK     &mkp MCLK                                                                                                                                         &mkp LCLK           &mkp RCLK  &mkp MCLK
-&mkp MB4               &mkp MB5      &kp LG(TAB)            &kp LG(D)                      &pinch_win                                  &mkp MB4                   &mkp MB5              &kp LG(TAB)         &kp LG(D)  &pinch_win
+&mkp MB5               &mkp MB4      &kp LG(TAB)            &kp LG(D)                      &pinch_win                                  &mkp MB5                   &mkp MB4              &kp LG(TAB)         &kp LG(D)  &pinch_win
             >;
         };
 
@@ -368,7 +368,7 @@
 &trans  &trans   &trans   &trans   &trans  &trans    &trans     &trans        &trans        &trans        &trans        &trans
         &trans   &trans   &trans   &trans  &trans    &trans     &trans        &trans        &trans        &trans
 &trans  &trans   &trans                                                                                   &trans        &trans           &trans
-&kp LG(LC(LEFT))  &kp LG(LC(RIGHT))  &trans  &trans  &trans       &kp LG(LC(LEFT))  &kp LG(LC(RIGHT))  &trans  &trans  &trans
+&kp LG(LC(RIGHT))  &kp LG(LC(LEFT))  &trans  &trans  &trans       &kp LG(LC(RIGHT))  &kp LG(LC(LEFT))  &trans  &trans  &trans
             >;
         };
 
