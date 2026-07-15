@@ -94,6 +94,28 @@
 
             label = "BLUETOOTH4";
         };
+
+        pinch_mac: pinch_mac {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press &mo 13 &kp LGUI>,
+                <&macro_pause_for_release>,
+                <&macro_release &mo 13 &kp LGUI>;
+
+            label = "PINCH_MAC";
+        };
+
+        pinch_win: pinch_win {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press &mo 13 &kp LCTRL>,
+                <&macro_pause_for_release>,
+                <&macro_release &mo 13 &kp LCTRL>;
+
+            label = "PINCH_WIN";
+        };
     };
 
     behaviors {
@@ -203,7 +225,7 @@
 &mo 3                  &kp GLOBE  &kp LEFT_ALT           &kp LANG2                      &shift_space LEFT_SHIFT SPACE  &lt 3 TAB      &kp LANG1                &bksp_lt_hp 2 BACKSPACE  &enter_lt 1 ENTER             &lt 12 SINGLE_QUOTE &none      &mkp MB1
                        &none      &kp RIGHT              &kp DOWN                       &kp LEFT   &kp UP         &kp UP         &kp LEFT                 &kp DOWN                      &kp RIGHT           &none
 &mkp LCLK              &mkp RCLK  &mkp MCLK                                                                                                                                             &mkp LCLK           &mkp RCLK  &mkp MCLK
-&mkp MB4               &mkp MB5   &kp LC(UP)             &kp LC(DOWN)                   &kp LGUI                                 &mkp MB4                 &mkp MB5                      &kp LC(UP)          &kp LC(DOWN) &kp LGUI
+&kp LG(LBKT)               &kp LG(RBKT)   &kp LC(UP)             &kp LC(DOWN)                   &pinch_mac                                 &kp LG(LBKT)                 &kp LG(RBKT)                      &kp LC(UP)          &kp LC(DOWN) &pinch_mac
             >;
         };
 
@@ -242,7 +264,7 @@
 &trans  &trans   &trans   &trans   &trans  &trans    &trans     &trans             &trans        &trans        &trans        &trans
         &trans   &trans   &trans   &trans  &trans    &trans     &trans             &trans        &trans        &trans
 &trans  &trans   &trans                                                                                        &trans        &trans           &trans
-&trans  &trans   &trans   &trans   &trans                       &trans             &trans        &trans        &trans        &trans
+&kp LC(LEFT)  &kp LC(RIGHT)  &trans  &trans  &trans               &kp LC(LEFT)  &kp LC(RIGHT)  &trans  &trans  &trans
             >;
         };
 
@@ -255,7 +277,7 @@
 &mo 7               &kp GLOBE  &kp LEFT_ALT           &kp LANG2                      &shift_space LEFT_SHIFT SPACE  &lt 5 TAB      &kp LANG1         &lt 6 BACKSPACE               &lt 5 ENTER         &lt 12 SINGLE_QUOTE &none      &mkp MB1
                     &none      &kp RIGHT              &kp DOWN                       &kp LEFT   &kp UP         &kp UP         &kp LEFT          &kp DOWN                      &kp RIGHT           &none
 &mkp LCLK           &mkp RCLK  &mkp MCLK                                                                                                                                      &mkp LCLK           &mkp RCLK  &mkp MCLK
-&mkp MB4            &mkp MB5   &kp LC(UP)             &kp LC(DOWN)                   &kp LGUI                                 &mkp MB4          &mkp MB5                      &kp LC(UP)          &kp LC(DOWN) &kp LGUI
+&kp LG(LBKT)            &kp LG(RBKT)   &kp LC(UP)             &kp LC(DOWN)                   &pinch_mac                                 &kp LG(LBKT)          &kp LG(RBKT)                      &kp LC(UP)          &kp LC(DOWN) &pinch_mac
             >;
         };
 
@@ -307,7 +329,7 @@
 &mo 11                 &kp LEFT_ALT  &kp LEFT_GUI           &kp LANG2                      &shift_space LEFT_SHIFT SPACE  &lt 11 TAB       &kp LANG1                 &bksp_lt_hp 10 BACKSPACE  &enter_lt 9 ENTER  &lt 12 SINGLE_QUOTE &none      &mkp MB1
                        &none         &kp RIGHT              &kp DOWN                       &kp LEFT    &kp UP         &kp UP           &kp LEFT                  &kp DOWN              &kp RIGHT           &none
 &mkp LCLK              &mkp RCLK     &mkp MCLK                                                                                                                                         &mkp LCLK           &mkp RCLK  &mkp MCLK
-&mkp MB4               &mkp MB5      &kp LG(TAB)            &kp LG(D)                      &kp LCTRL                                  &mkp MB4                   &mkp MB5              &kp LG(TAB)         &kp LG(D)  &kp LCTRL
+&mkp MB4               &mkp MB5      &kp LG(TAB)            &kp LG(D)                      &pinch_win                                  &mkp MB4                   &mkp MB5              &kp LG(TAB)         &kp LG(D)  &pinch_win
             >;
         };
 
@@ -346,7 +368,7 @@
 &trans  &trans   &trans   &trans   &trans  &trans    &trans     &trans        &trans        &trans        &trans        &trans
         &trans   &trans   &trans   &trans  &trans    &trans     &trans        &trans        &trans        &trans
 &trans  &trans   &trans                                                                                   &trans        &trans           &trans
-&trans  &trans   &trans   &trans   &trans                       &trans        &trans        &trans        &trans        &trans
+&kp LG(LC(LEFT))  &kp LG(LC(RIGHT))  &trans  &trans  &trans       &kp LG(LC(LEFT))  &kp LG(LC(RIGHT))  &trans  &trans  &trans
             >;
         };
 
@@ -360,6 +382,19 @@
                                &trans                         &trans                         &trans                         &trans          &trans    &trans                   &trans   &trans       &trans       &trans
 &trans                         &trans                         &trans                                                                                                                                 &trans       &trans       &trans
 &trans                         &trans                         &trans                         &trans                         &trans                                             &trans   &trans       &trans       &trans       &trans
+            >;
+        };
+
+        Pinch {
+            display-name = "Pinch";
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+        &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
             >;
         };
     };
