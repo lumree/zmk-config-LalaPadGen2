@@ -69,7 +69,7 @@
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings =
-                <&bt BT_SEL 2 &to 8 &zip_dyn_scale_set ZDS_SC 20 &bt BT_DISC 0 &bt BT_DISC 1 &bt BT_DISC 3 &bt BT_DISC 4>,
+                <&bt BT_SEL 2 &to 8 &zip_dyn_scale_set ZDS_SC 40 &bt BT_DISC 0 &bt BT_DISC 1 &bt BT_DISC 3 &bt BT_DISC 4>,
                 <&macro_press>;
 
             label = "BLUETOOTH2";
@@ -79,7 +79,7 @@
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings =
-                <&bt BT_SEL 3 &to 8 &zip_dyn_scale_set ZDS_SC 20 &bt BT_DISC 0 &bt BT_DISC 1 &bt BT_DISC 2 &bt BT_DISC 4>,
+                <&bt BT_SEL 3 &to 8 &zip_dyn_scale_set ZDS_SC 40 &bt BT_DISC 0 &bt BT_DISC 1 &bt BT_DISC 2 &bt BT_DISC 4>,
                 <&macro_press>;
 
             label = "BLUETOOTH3";
@@ -89,7 +89,7 @@
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings =
-                <&bt BT_SEL 4 &to 8 &zip_dyn_scale_set ZDS_SC 20 &bt BT_DISC 0 &bt BT_DISC 1 &bt BT_DISC 2 &bt BT_DISC 3>,
+                <&bt BT_SEL 4 &to 8 &zip_dyn_scale_set ZDS_SC 40 &bt BT_DISC 0 &bt BT_DISC 1 &bt BT_DISC 2 &bt BT_DISC 3>,
                 <&macro_press>;
 
             label = "BLUETOOTH4";
