@@ -222,7 +222,7 @@
 &mt LEFT_CONTROL Q     &kp W      &kp E                  &kp R                          &kp T                                     &kp Y                    &kp U                         &kp I               &kp O      &kp P
 &shift_a LEFT_SHIFT A  &kp S      &win_alt_d LEFT_GUI D  &f_left_mod LEFT_COMMAND F     &kp G                                     &kp H                    &j_right_mod RIGHT_COMMAND J  &kp K               &kp L      &mt RIGHT_SHIFT SEMICOLON
 &kp Z                  &kp X      &kp C                  &kp V                          &kp B                                     &kp N                    &kp M                         &kp COMMA           &kp DOT    &kp SLASH
-&mkp MB1  &kp GLOBE  &kp LEFT_ALT  &kp LANG2  &shift_space LEFT_SHIFT SPACE  &lt 3 TAB  &kp LANG1  &bksp_lt_hp 2 BACKSPACE  &enter_lt 1 ENTER  &lt 12 SINGLE_QUOTE  &kp PLUS  &kp MINUS
+&kp LEFT_CONTROL  &kp GLOBE  &kp LEFT_ALT  &mkp MB1  &shift_space LEFT_SHIFT SPACE  &lt 3 TAB  &mt LANG2 LANG1  &bksp_lt_hp 2 BACKSPACE  &enter_lt 1 ENTER  &lt 12 SINGLE_QUOTE  &kp PLUS  &kp MINUS
                        &none      &kp RIGHT              &kp DOWN                       &kp LEFT   &kp UP         &kp C_VOL_UP         &kp LS(COMMA)                 &kp C_VOL_DN                      &kp LS(DOT)           &kp C_MUTE
 &mkp LCLK              &mkp RCLK  &mkp MCLK                                                                                                                                             &mkp LCLK           &mkp RCLK  &mkp MCLK
 &kp LC(RIGHT)               &kp LC(LEFT)   &kp LC(UP)             &kp LC(DOWN)                   &pinch_mac                                 &kp LC(RIGHT)                 &kp LC(LEFT)                      &kp LC(UP)          &kp LC(DOWN) &pinch_mac
@@ -235,7 +235,7 @@
 &kp NUMBER_7    &kp NUMBER_8  &kp NUMBER_9  &kp NUMBER_0  &trans                     &kp LC(LS(TAB))  &kp HOME        &kp UP_ARROW    &kp END          &kp LC(TAB)
 &kp NUMBER_4    &kp NUMBER_5  &kp NUMBER_6  &kp LEFT_GUI  &trans                     &kp BACKSPACE    &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp DELETE
 &kp NUMBER_1    &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_0  &trans                     &kp F10          &kp PAGE_UP     &kp F2          &kp PAGE_DOWN    &kp ESCAPE
-&kp LEFT_SHIFT  &trans  &trans  &trans  &trans  &trans  &trans  &kp F7  &trans  &trans  &trans  &mkp MB2
+&kp LEFT_SHIFT  &trans  &trans  &mkp MB2  &trans  &trans  &trans  &kp F7  &trans  &trans  &trans  &mkp MB2
                 &trans        &trans        &trans        &trans  &trans    &trans   &trans           &trans          &trans          &trans
 &trans          &trans        &trans                                                                                                  &trans           &trans           &trans
 &trans          &trans        &trans        &trans        &trans                     &trans           &trans          &trans          &trans           &trans
@@ -261,7 +261,7 @@
 &kp F1  &kp F2   &kp F3   &kp F4   &trans                       &trans             &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &trans
 &kp F5  &kp F6   &kp F7   &kp F8   &trans                       &kp RIGHT_COMMAND  &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp RIGHT_SHIFT
 &kp F9  &kp F10  &kp F11  &kp F12  &trans                       &kp NUMBER_0       &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp N0
-&mkp MB2  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
         &trans  &trans  &trans  &trans  &trans    &kp C_BRI_UP  &trans  &kp C_BRI_DN  &trans  &trans
 &trans  &trans   &trans                                                                                        &trans        &trans           &trans
 &kp LG(RBKT)  &kp LG(LBKT)  &trans  &trans  &trans               &kp LG(RBKT)  &kp LG(LBKT)  &trans  &trans  &trans
@@ -274,7 +274,7 @@
 &mt LEFT_COMMAND Q  &kp W      &kp E                  &kp R                          &kp T                                     &kp Y             &kp U                         &kp I               &kp O      &kp P
 &mt LEFT_SHIFT A    &kp S      &win_alt_d LEFT_GUI D  &f_left_mod LCTRL F            &kp G                                     &kp H             &j_right_mod RIGHT_COMMAND J  &kp K               &kp L      &mt RIGHT_SHIFT SEMICOLON
 &kp Z               &kp X      &kp C                  &kp V                          &kp B                                     &kp N             &kp M                         &kp COMMA           &kp DOT    &kp SLASH
-&mkp MB1  &kp GLOBE  &kp LEFT_ALT  &kp LANG2  &shift_space LEFT_SHIFT SPACE  &lt 5 TAB  &kp LANG1  &lt 6 BACKSPACE  &lt 5 ENTER  &lt 12 SINGLE_QUOTE  &kp PLUS  &kp MINUS
+&kp LEFT_CONTROL  &kp GLOBE  &kp LEFT_ALT  &mkp MB1  &shift_space LEFT_SHIFT SPACE  &lt 5 TAB  &mt LANG2 LANG1  &lt 6 BACKSPACE  &lt 5 ENTER  &lt 12 SINGLE_QUOTE  &kp PLUS  &kp MINUS
                     &none      &kp RIGHT              &kp DOWN                       &kp LEFT   &kp UP         &kp C_VOL_UP         &kp LS(COMMA)          &kp C_VOL_DN                      &kp LS(DOT)           &kp C_MUTE
 &mkp LCLK           &mkp RCLK  &mkp MCLK                                                                                                                                      &mkp LCLK           &mkp RCLK  &mkp MCLK
 &kp LC(RIGHT)            &kp LC(LEFT)   &kp LC(UP)             &kp LC(DOWN)                   &pinch_mac                                 &kp LC(RIGHT)          &kp LC(LEFT)                      &kp LC(UP)          &kp LC(DOWN) &pinch_mac
@@ -287,7 +287,7 @@
 &kp NUMBER_7    &kp NUMBER_8  &kp NUMBER_9  &kp NUMBER_0  &trans                     &kp LC(LS(TAB))    &kp LG(LEFT)      &kp UP_ARROW    &kp LG(RIGHT)       &kp LC(TAB)
 &kp NUMBER_4    &kp NUMBER_5  &kp NUMBER_6  &kp LEFT_GUI  &trans                     &kp BACKSPACE      &kp LEFT_ARROW    &kp DOWN_ARROW  &kp RIGHT_ARROW     &kp DELETE
 &kp NUMBER_1    &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_0  &trans                     &kp LC(SEMICOLON)  &kp LG(UP_ARROW)  &kp F2          &kp LG(DOWN_ARROW)  &kp ESCAPE
-&kp LEFT_SHIFT  &trans  &trans  &trans  &trans  &trans  &trans  &kp F7  &trans  &trans  &kp LC(K)  &mkp MB2
+&kp LEFT_SHIFT  &trans  &trans  &mkp MB2  &trans  &trans  &trans  &kp F7  &trans  &trans  &kp LC(K)  &mkp MB2
                 &trans        &trans        &trans        &trans  &trans    &trans   &trans             &trans            &trans          &trans
 &trans          &trans        &trans                                                                                                      &trans              &trans           &trans
 &trans          &trans        &trans        &trans        &trans                     &trans             &trans            &trans          &trans              &trans
@@ -313,7 +313,7 @@
 &trans  &trans  &trans  &trans  &trans                        &trans        &kp NUMBER_7  &kp NUMBER_8    &kp NUMBER_9    &trans
 &trans  &trans  &trans  &trans  &trans                        &trans        &kp NUMBER_4  &kp NUMBER_5    &kp NUMBER_6    &kp RIGHT_COMMAND
 &trans  &trans  &trans  &trans  &trans                        &kp NUMBER_0  &kp NUMBER_1  &kp NUMBER_2    &kp NUMBER_3    &trans
-&mkp MB2  &trans  &trans  &trans  &trans  &trans  &trans  &kp LANGUAGE_2  &kp LANGUAGE_1  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &kp LANGUAGE_2  &kp LANGUAGE_1  &trans  &trans  &trans
         &trans  &trans  &trans  &trans  &trans    &kp C_BRI_UP  &trans  &kp C_BRI_DN  &trans  &trans
 &trans  &trans  &trans                                                                                    &trans          &trans          &trans
 &kp LG(RBKT)  &kp LG(LBKT)  &trans  &trans  &trans               &kp LG(RBKT)  &kp LG(LBKT)  &trans  &trans  &trans
@@ -326,7 +326,7 @@
 &kp Q                  &kp W         &kp E                  &kp R                          &kp T                                       &kp Y                     &kp U                 &kp I               &kp O      &kp P
 &shift_a LEFT_SHIFT A  &kp S         &win_alt_d LEFT_ALT D  &f_left_mod LCTRL F            &kp G                                       &kp H                     &j_right_mod LCTRL J  &kp K               &kp L      &mt RIGHT_SHIFT SEMICOLON
 &kp Z                  &kp X         &kp C                  &kp V                          &kp B                                       &kp N                     &kp M                 &kp COMMA           &kp DOT    &kp SLASH
-&mkp MB1  &kp LEFT_ALT  &kp LEFT_GUI  &kp LANG2  &shift_space LEFT_SHIFT SPACE  &lt 11 TAB  &kp LANG1  &bksp_lt_hp 10 BACKSPACE  &enter_lt 9 ENTER  &lt 12 SINGLE_QUOTE  &kp PLUS  &kp MINUS
+&kp LEFT_CONTROL  &kp LEFT_ALT  &kp LEFT_GUI  &mkp MB1  &shift_space LEFT_SHIFT SPACE  &lt 11 TAB  &mt LANG2 LANG1  &bksp_lt_hp 10 BACKSPACE  &enter_lt 9 ENTER  &lt 12 SINGLE_QUOTE  &kp PLUS  &kp MINUS
                        &none         &kp RIGHT              &kp DOWN                       &kp LEFT    &kp UP         &kp C_VOL_UP           &kp LS(COMMA)                  &kp C_VOL_DN              &kp LS(DOT)           &kp C_MUTE
 &mkp LCLK              &mkp RCLK     &mkp MCLK                                                                                                                                         &mkp LCLK           &mkp RCLK  &mkp MCLK
 &kp LG(LC(RIGHT))               &kp LG(LC(LEFT))      &kp LG(TAB)            &kp LG(D)                      &pinch_win                                  &kp LG(LC(RIGHT))                   &kp LG(LC(LEFT))              &kp LG(TAB)         &kp LG(D)  &pinch_win
@@ -339,7 +339,7 @@
 &kp NUMBER_7    &kp NUMBER_8  &kp NUMBER_9  &kp NUMBER_0  &trans                     &kp LC(LS(TAB))  &kp HOME        &kp UP_ARROW    &kp END          &kp LC(TAB)
 &kp NUMBER_4    &kp NUMBER_5  &kp NUMBER_6  &kp LCTRL     &trans                     &kp BACKSPACE    &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp DELETE
 &kp NUMBER_1    &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_0  &trans                     &kp F10          &kp PAGE_UP     &kp F2          &kp PAGE_DOWN    &kp ESCAPE
-&kp LEFT_SHIFT  &trans  &trans  &trans  &trans  &trans  &trans  &kp F7  &trans  &trans  &trans  &mkp MB2
+&kp LEFT_SHIFT  &trans  &trans  &mkp MB2  &trans  &trans  &trans  &kp F7  &trans  &trans  &trans  &mkp MB2
                 &trans        &trans        &trans        &trans  &trans    &trans   &trans           &trans          &trans          &trans
 &trans          &trans        &trans                                                                                                  &trans           &trans           &trans
 &trans          &trans        &trans        &trans        &trans                     &trans           &trans          &trans          &trans           &trans
@@ -365,7 +365,7 @@
 &kp F1  &kp F2   &kp F3   &kp F4   &trans                       &trans        &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &trans
 &kp F5  &kp F6   &kp F7   &kp F8   &trans                       &kp RCTRL     &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp RIGHT_SHIFT
 &kp F9  &kp F10  &kp F11  &kp F12  &trans                       &kp NUMBER_0  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_0
-&mkp MB2  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
         &trans  &trans  &trans  &trans  &trans    &kp C_BRI_UP  &trans  &kp C_BRI_DN  &trans  &trans
 &trans  &trans   &trans                                                                                   &trans        &trans           &trans
 &mkp MB5  &mkp MB4  &trans  &trans  &trans       &mkp MB5  &mkp MB4  &trans  &trans  &trans
