@@ -121,11 +121,11 @@
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             wait-ms = <30>;
-            tap-ms = <20>;
+            tap-ms = <40>;
             bindings =
-                <&macro_press &kp LALT &kp LGUI>,
-                <&macro_tap &kp C_EJECT>,
-                <&macro_release &kp LALT &kp LGUI>,
+                <&macro_press &kp LCTRL &kp LALT &kp LGUI>,
+                <&macro_tap &kp S>,
+                <&macro_release &kp LCTRL &kp LALT &kp LGUI>,
                 <&macro_pause_for_release>;
 
             label = "MAC_SLEEP";
@@ -135,10 +135,10 @@
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             wait-ms = <30>;
-            tap-ms = <20>;
+            tap-ms = <40>;
             bindings =
                 <&macro_press &kp LCTRL &kp LALT &kp LGUI>,
-                <&macro_tap &kp C_EJECT>,
+                <&macro_tap &kp Q>,
                 <&macro_release &kp LCTRL &kp LALT &kp LGUI>,
                 <&macro_pause_for_release>;
 
