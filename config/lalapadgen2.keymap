@@ -125,8 +125,8 @@
             bindings =
                 <&macro_press &kp LCTRL &kp LALT &kp LGUI>,
                 <&macro_tap &kp S>,
-                <&macro_release &kp LCTRL &kp LALT &kp LGUI>,
-                <&macro_pause_for_release>;
+                <&macro_pause_for_release>,
+                <&macro_release &kp LCTRL &kp LALT &kp LGUI>;
 
             label = "MAC_SLEEP";
         };
@@ -139,8 +139,8 @@
             bindings =
                 <&macro_press &kp LCTRL &kp LALT &kp LGUI>,
                 <&macro_tap &kp Q>,
-                <&macro_release &kp LCTRL &kp LALT &kp LGUI>,
-                <&macro_pause_for_release>;
+                <&macro_pause_for_release>,
+                <&macro_release &kp LCTRL &kp LALT &kp LGUI>;
 
             label = "MAC_SHUTDOWN";
         };
