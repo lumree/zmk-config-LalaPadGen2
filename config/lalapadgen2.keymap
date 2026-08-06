@@ -99,9 +99,11 @@
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings =
-                <&macro_press &mo 16 &kp LGUI>,
+                <&macro_press>,
+                <&mo 16 &kp LGUI>,
                 <&macro_pause_for_release>,
-                <&macro_release &mo 16 &kp LGUI>;
+                <&macro_release>,
+                <&mo 16 &kp LGUI>;
 
             label = "PINCH_MAC";
         };
@@ -110,9 +112,11 @@
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings =
-                <&macro_press &mo 16 &kp LCTRL>,
+                <&macro_press>,
+                <&mo 16 &kp LCTRL>,
                 <&macro_pause_for_release>,
-                <&macro_release &mo 16 &kp LCTRL>;
+                <&macro_release>,
+                <&mo 16 &kp LCTRL>;
 
             label = "PINCH_WIN";
         };
@@ -123,9 +127,12 @@
             wait-ms = <30>;
             tap-ms = <40>;
             bindings =
-                <&macro_press &kp LCTRL &kp LALT &kp LGUI>,
-                <&macro_tap &kp S>,
-                <&macro_release &kp LCTRL &kp LALT &kp LGUI>,
+                <&macro_press>,
+                <&kp LCTRL &kp LALT &kp LGUI>,
+                <&macro_tap>,
+                <&kp S>,
+                <&macro_release>,
+                <&kp LCTRL &kp LALT &kp LGUI>,
                 <&macro_pause_for_release>;
 
             label = "MAC_SLEEP";
@@ -137,9 +144,12 @@
             wait-ms = <30>;
             tap-ms = <40>;
             bindings =
-                <&macro_press &kp LCTRL &kp LALT &kp LGUI>,
-                <&macro_tap &kp Q>,
-                <&macro_release &kp LCTRL &kp LALT &kp LGUI>,
+                <&macro_press>,
+                <&kp LCTRL &kp LALT &kp LGUI>,
+                <&macro_tap>,
+                <&kp Q>,
+                <&macro_release>,
+                <&kp LCTRL &kp LALT &kp LGUI>,
                 <&macro_pause_for_release>;
 
             label = "MAC_SHUTDOWN";
@@ -249,38 +259,38 @@
         Mac0 {
             display-name = "Mac0";
             bindings = <
-&mt LEFT_CONTROL Q     &kp W      &kp E                  &kp R                          &kp T                                     &kp Y                    &kp U                         &kp I               &kp O      &kp P
-&shift_a LEFT_SHIFT A  &kp S      &win_alt_d LEFT_GUI D  &f_left_mod LEFT_COMMAND F     &kp G                                     &kp H                    &j_right_mod RIGHT_COMMAND J  &kp K               &kp L      &mt RIGHT_SHIFT SEMICOLON
-&kp Z                  &kp X      &kp C                  &kp V                          &kp B                                     &kp N                    &kp M                         &kp COMMA           &kp DOT    &kp SLASH
-&kp LEFT_CONTROL  &kp GLOBE  &kp LEFT_ALT  &mkp MB1  &shift_space LEFT_SHIFT SPACE  &lt 3 TAB  &bksp_lt_hp 4 LANG1  &bksp_lt_hp 2 BACKSPACE  &enter_lt 1 ENTER  &lt 15 SINGLE_QUOTE  &kp PLUS  &kp MINUS
-                       &none      &kp RIGHT              &kp DOWN                       &kp LEFT   &kp UP         &kp C_VOL_UP         &kp LS(COMMA)                 &kp C_VOL_DN                      &kp LS(DOT)           &kp C_MUTE
-&mkp LCLK              &mkp RCLK  &mkp MCLK                                                                                                                                             &mkp LCLK           &mkp RCLK  &mkp MCLK
-&kp LC(RIGHT)               &kp LC(LEFT)   &kp LC(UP)             &kp LC(DOWN)                   &pinch_mac                                 &kp LC(RIGHT)                 &kp LC(LEFT)                      &kp LC(UP)          &kp LC(DOWN) &pinch_mac
+&mt LEFT_CONTROL Q     &kp W         &kp E                  &kp R                       &kp T                                                          &kp Y                    &kp U                         &kp I                &kp O         &kp P
+&shift_a LEFT_SHIFT A  &kp S         &win_alt_d LEFT_GUI D  &f_left_mod LEFT_COMMAND F  &kp G                                                          &kp H                    &j_right_mod RIGHT_COMMAND J  &kp K                &kp L         &mt RIGHT_SHIFT SEMICOLON
+&kp Z                  &kp X         &kp C                  &kp V                       &kp B                                                          &kp N                    &kp M                         &kp COMMA            &kp DOT       &kp SLASH
+&kp LEFT_CONTROL       &kp GLOBE     &kp LEFT_ALT           &mkp MB1                    &shift_space LEFT_SHIFT SPACE  &lt 3 TAB  &bksp_lt_hp 4 LANG1  &bksp_lt_hp 2 BACKSPACE  &enter_lt 1 ENTER             &lt 15 SINGLE_QUOTE  &kp PLUS      &kp MINUS
+                       &none         &kp RIGHT              &kp DOWN                    &kp LEFT                       &kp UP     &kp C_VOL_UP         &kp LS(COMMA)            &kp C_VOL_DN                  &kp LS(DOT)          &kp C_MUTE
+&mkp LCLK              &mkp RCLK     &mkp MCLK                                                                                                                                                                &mkp LCLK            &mkp RCLK     &mkp MCLK
+&kp LC(RIGHT)          &kp LC(LEFT)  &kp LC(UP)             &kp LC(DOWN)                &pinch_mac                                                     &kp LC(RIGHT)            &kp LC(LEFT)                  &kp LC(UP)           &kp LC(DOWN)  &pinch_mac
             >;
         };
 
         Mac1 {
             display-name = "Mac1";
             bindings = <
-&kp NUMBER_7    &kp NUMBER_8  &kp NUMBER_9  &kp NUMBER_0  &trans                     &kp LC(LS(TAB))  &kp HOME        &kp UP_ARROW    &kp END          &kp LC(TAB)
-&kp NUMBER_4    &kp NUMBER_5  &kp NUMBER_6  &kp LEFT_GUI  &trans                     &kp BACKSPACE    &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp DELETE
-&kp NUMBER_1    &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_0  &trans                     &kp F10          &kp PAGE_UP     &kp F2          &kp PAGE_DOWN    &kp ESCAPE
-&kp LEFT_SHIFT  &trans  &trans  &mkp MB2  &trans  &trans  &trans  &kp F7  &trans  &trans  &trans  &mkp MB2
-                &trans        &trans        &trans        &trans  &trans    &trans   &trans           &trans          &trans          &trans
-&trans          &trans        &trans                                                                                                  &trans           &trans           &trans
-&trans          &trans        &trans        &trans        &trans                     &trans           &trans          &trans          &trans           &trans
+&kp NUMBER_7    &kp NUMBER_8  &kp NUMBER_9  &kp NUMBER_0  &trans                  &kp LC(LS(TAB))  &kp HOME        &kp UP_ARROW    &kp END          &kp LC(TAB)
+&kp NUMBER_4    &kp NUMBER_5  &kp NUMBER_6  &kp LEFT_GUI  &trans                  &kp BACKSPACE    &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp DELETE
+&kp NUMBER_1    &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_0  &trans                  &kp F10          &kp PAGE_UP     &kp F2          &kp PAGE_DOWN    &kp ESCAPE
+&kp LEFT_SHIFT  &trans        &trans        &mkp MB2      &trans  &trans  &trans  &kp F7           &trans          &trans          &trans           &mkp MB2
+                &trans        &trans        &trans        &trans  &trans  &trans  &trans           &trans          &trans          &trans
+&trans          &trans        &trans                                                                               &trans          &trans           &trans
+&trans          &trans        &trans        &trans        &trans                  &trans           &trans          &trans          &trans           &trans
             >;
         };
 
         Mac2 {
             display-name = "Mac2";
             bindings = <
-&kp GRAVE  &kp DOUBLE_QUOTES  &kp SINGLE_QUOTE  &kp TILDE  &trans  &kp ASTERISK  &kp CARET  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp BACKSLASH
-&kp EXCLAMATION  &kp AT_SIGN  &kp HASH  &kp DOLLAR  &kp PERCENT  &trans  &kp AMPERSAND  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp MINUS
-&trans  &trans  &kp PLUS  &kp EQUAL  &trans  &trans  &kp PIPE  &kp LEFT_BRACE  &kp RIGHT_BRACE  &kp UNDERSCORE
-&trans           &trans             &trans            &trans      &trans   &trans    &trans    &trans        &trans         &trans                &trans                 &trans
-                 &trans             &trans            &trans      &trans   &trans    &trans    &trans        &trans         &trans                &trans
-&trans           &trans             &trans                                                                                                        &trans                 &trans          &trans
+&kp GRAVE        &kp DOUBLE_QUOTES  &kp SINGLE_QUOTE  &kp TILDE   &trans                       &kp ASTERISK  &kp CARET      &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp BACKSLASH
+&kp EXCLAMATION  &kp AT_SIGN        &kp HASH          &kp DOLLAR  &kp PERCENT                  &trans        &kp AMPERSAND  &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp MINUS
+&trans           &trans             &kp PLUS          &kp EQUAL   &trans                       &trans        &kp PIPE       &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp UNDERSCORE
+&trans           &trans             &trans            &trans      &trans       &trans  &trans  &trans        &trans         &trans                &trans                 &trans
+                 &trans             &trans            &trans      &trans       &trans  &trans  &trans        &trans         &trans                &trans
+&trans           &trans             &trans                                                                                  &trans                &trans                 &trans
 &trans           &trans             &trans            &trans      &trans                       &trans        &trans         &trans                &trans                 &trans
             >;
         };
@@ -288,129 +298,129 @@
         Mac3 {
             display-name = "Mac3";
             bindings = <
-&kp F1  &kp F2  &kp F3  &kp F4  &kp F5  &trans  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &trans
-&kp F6  &kp F7  &kp F8  &kp F9  &kp F10  &kp RIGHT_COMMAND  &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp RIGHT_SHIFT
-&kp F11  &kp F12  &kp F13  &kp F14  &kp F15  &kp NUMBER_0  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp N0
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-        &trans  &trans  &trans  &trans  &trans    &kp C_BRI_UP  &trans  &kp C_BRI_DN  &trans  &trans
-&trans  &trans   &trans                                                                                        &trans        &trans           &trans
-&kp LG(RBKT)  &kp LG(LBKT)  &trans  &trans  &trans               &kp LG(RBKT)  &kp LG(LBKT)  &trans  &trans  &trans
+&kp F1        &kp F2        &kp F3   &kp F4   &kp F5                         &trans             &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &trans
+&kp F6        &kp F7        &kp F8   &kp F9   &kp F10                        &kp RIGHT_COMMAND  &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp RIGHT_SHIFT
+&kp F11       &kp F12       &kp F13  &kp F14  &kp F15                        &kp NUMBER_0       &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp N0
+&trans        &trans        &trans   &trans   &trans   &trans  &trans        &trans             &trans        &trans        &trans        &trans
+              &trans        &trans   &trans   &trans   &trans  &kp C_BRI_UP  &trans             &kp C_BRI_DN  &trans        &trans
+&trans        &trans        &trans                                                                            &trans        &trans        &trans
+&kp LG(RBKT)  &kp LG(LBKT)  &trans   &trans   &trans                         &kp LG(RBKT)       &kp LG(LBKT)  &trans        &trans        &trans
             >;
         };
 
         Mac4 {
             display-name = "Mac4";
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&kp LS(LG(N3))  &kp LC(LS(LG(N3)))  &kp LS(LG(N4))  &kp LC(LS(LG(N4)))  &kp LS(LG(N5))  &trans  &mac_shutdown  &trans  &trans  &trans
-&kp LC(LG(Q))  &mac_sleep  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-        &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans          &trans              &trans          &trans              &trans                          &trans  &trans         &trans  &trans  &trans
+&kp LS(LG(N3))  &kp LC(LS(LG(N3)))  &kp LS(LG(N4))  &kp LC(LS(LG(N4)))  &kp LS(LG(N5))                  &trans  &mac_shutdown  &trans  &trans  &trans
+&kp LC(LG(Q))   &mac_sleep          &trans          &trans              &trans                          &trans  &trans         &trans  &trans  &trans
+&trans          &trans              &trans          &trans              &trans          &trans  &trans  &trans  &trans         &trans  &trans  &trans
+                &trans              &trans          &trans              &trans          &trans  &trans  &trans  &trans         &trans  &trans
+&trans          &trans              &trans                                                                                     &trans  &trans  &trans
+&trans          &trans              &trans          &trans              &trans                          &trans  &trans         &trans  &trans  &trans
             >;
         };
 
         iPad0 {
             display-name = "iPad0";
             bindings = <
-&mt LEFT_COMMAND Q  &kp W      &kp E                  &kp R                          &kp T                                     &kp Y             &kp U                         &kp I               &kp O      &kp P
-&mt LEFT_SHIFT A    &kp S      &win_alt_d LEFT_GUI D  &f_left_mod LCTRL F            &kp G                                     &kp H             &j_right_mod RIGHT_COMMAND J  &kp K               &kp L      &mt RIGHT_SHIFT SEMICOLON
-&kp Z               &kp X      &kp C                  &kp V                          &kp B                                     &kp N             &kp M                         &kp COMMA           &kp DOT    &kp SLASH
-&kp LEFT_CONTROL  &kp GLOBE  &kp LEFT_ALT  &mkp MB1  &shift_space LEFT_SHIFT SPACE  &lt 6 TAB  &bksp_lt_hp 9 LANG1  &lt 7 BACKSPACE  &lt 6 ENTER  &lt 15 SINGLE_QUOTE  &kp PLUS  &kp MINUS
-                    &none      &kp RIGHT              &kp DOWN                       &kp LEFT   &kp UP         &kp C_VOL_UP         &kp LS(COMMA)          &kp C_VOL_DN                      &kp LS(DOT)           &kp C_MUTE
-&mkp LCLK           &mkp RCLK  &mkp MCLK                                                                                                                                      &mkp LCLK           &mkp RCLK  &mkp MCLK
-&kp LC(RIGHT)            &kp LC(LEFT)   &kp LC(UP)             &kp LC(DOWN)                   &pinch_mac                                 &kp LC(RIGHT)          &kp LC(LEFT)                      &kp LC(UP)          &kp LC(DOWN) &pinch_mac
+&mt LEFT_COMMAND Q  &kp W         &kp E                  &kp R                &kp T                                                          &kp Y            &kp U                         &kp I                &kp O         &kp P
+&mt LEFT_SHIFT A    &kp S         &win_alt_d LEFT_GUI D  &f_left_mod LCTRL F  &kp G                                                          &kp H            &j_right_mod RIGHT_COMMAND J  &kp K                &kp L         &mt RIGHT_SHIFT SEMICOLON
+&kp Z               &kp X         &kp C                  &kp V                &kp B                                                          &kp N            &kp M                         &kp COMMA            &kp DOT       &kp SLASH
+&kp LEFT_CONTROL    &kp GLOBE     &kp LEFT_ALT           &mkp MB1             &shift_space LEFT_SHIFT SPACE  &lt 6 TAB  &bksp_lt_hp 9 LANG1  &lt 7 BACKSPACE  &lt 6 ENTER                   &lt 15 SINGLE_QUOTE  &kp PLUS      &kp MINUS
+                    &none         &kp RIGHT              &kp DOWN             &kp LEFT                       &kp UP     &kp C_VOL_UP         &kp LS(COMMA)    &kp C_VOL_DN                  &kp LS(DOT)          &kp C_MUTE
+&mkp LCLK           &mkp RCLK     &mkp MCLK                                                                                                                                                 &mkp LCLK            &mkp RCLK     &mkp MCLK
+&kp LC(RIGHT)       &kp LC(LEFT)  &kp LC(UP)             &kp LC(DOWN)         &pinch_mac                                                     &kp LC(RIGHT)    &kp LC(LEFT)                  &kp LC(UP)           &kp LC(DOWN)  &pinch_mac
             >;
         };
 
         iPad1 {
             display-name = "iPad1";
             bindings = <
-&kp NUMBER_7    &kp NUMBER_8  &kp NUMBER_9  &kp NUMBER_0  &trans                     &kp LC(LS(TAB))    &kp LG(LEFT)      &kp UP_ARROW    &kp LG(RIGHT)       &kp LC(TAB)
-&kp NUMBER_4    &kp NUMBER_5  &kp NUMBER_6  &kp LEFT_GUI  &trans                     &kp BACKSPACE      &kp LEFT_ARROW    &kp DOWN_ARROW  &kp RIGHT_ARROW     &kp DELETE
-&kp NUMBER_1    &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_0  &trans                     &kp LC(SEMICOLON)  &kp LG(UP_ARROW)  &kp F2          &kp LG(DOWN_ARROW)  &kp ESCAPE
-&kp LEFT_SHIFT  &trans  &trans  &mkp MB2  &trans  &trans  &trans  &kp F7  &trans  &trans  &kp LC(K)  &mkp MB2
-                &trans        &trans        &trans        &trans  &trans    &trans   &trans             &trans            &trans          &trans
-&trans          &trans        &trans                                                                                                      &trans              &trans           &trans
-&trans          &trans        &trans        &trans        &trans                     &trans             &trans            &trans          &trans              &trans
+&kp NUMBER_7    &kp NUMBER_8  &kp NUMBER_9  &kp NUMBER_0  &trans                  &kp LC(LS(TAB))    &kp LG(LEFT)      &kp UP_ARROW    &kp LG(RIGHT)       &kp LC(TAB)
+&kp NUMBER_4    &kp NUMBER_5  &kp NUMBER_6  &kp LEFT_GUI  &trans                  &kp BACKSPACE      &kp LEFT_ARROW    &kp DOWN_ARROW  &kp RIGHT_ARROW     &kp DELETE
+&kp NUMBER_1    &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_0  &trans                  &kp LC(SEMICOLON)  &kp LG(UP_ARROW)  &kp F2          &kp LG(DOWN_ARROW)  &kp ESCAPE
+&kp LEFT_SHIFT  &trans        &trans        &mkp MB2      &trans  &trans  &trans  &kp F7             &trans            &trans          &kp LC(K)           &mkp MB2
+                &trans        &trans        &trans        &trans  &trans  &trans  &trans             &trans            &trans          &trans
+&trans          &trans        &trans                                                                                   &trans          &trans              &trans
+&trans          &trans        &trans        &trans        &trans                  &trans             &trans            &trans          &trans              &trans
             >;
         };
 
         iPad2 {
             display-name = "iPad2";
             bindings = <
-&kp EXCLAMATION  &kp AT_SIGN  &kp HASH  &kp DOLLAR  &kp PERCENT  &kp CARET  &kp AMPERSAND  &kp ASTRK  &kp MINUS  &kp BACKSLASH
-&kp F1  &kp F2  &kp F3  &kp F4  &kp F5  &trans  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp BACKSLASH  &kp MINUS
-&kp F6  &kp F7  &kp F8  &kp F9  &kp F10  &trans  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &trans  &kp UNDERSCORE
-&kp F11          &kp F12      &trans    &trans          &kp LANGUAGE_1  &kp LANGUAGE_2    &trans     &trans     &trans                &trans                 &trans         &trans
-                 &trans       &trans    &trans          &trans          &trans    &trans             &trans     &trans                &trans                 &trans
-&trans           &trans       &trans                                                                                                  &trans                 &trans         &trans
-&trans           &trans       &trans    &trans          &trans                                       &trans     &trans                &trans                 &trans         &trans
+&kp EXCLAMATION  &kp AT_SIGN  &kp HASH  &kp DOLLAR  &kp PERCENT                             &kp CARET  &kp AMPERSAND         &kp ASTRK              &kp MINUS      &kp BACKSLASH
+&kp F1           &kp F2       &kp F3    &kp F4      &kp F5                                  &trans     &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp BACKSLASH  &kp MINUS
+&kp F6           &kp F7       &kp F8    &kp F9      &kp F10                                 &trans     &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &trans         &kp UNDERSCORE
+&kp F11          &kp F12      &trans    &trans      &kp LANGUAGE_1  &kp LANGUAGE_2  &trans  &trans     &trans                &trans                 &trans         &trans
+                 &trans       &trans    &trans      &trans          &trans          &trans  &trans     &trans                &trans                 &trans
+&trans           &trans       &trans                                                                                         &trans                 &trans         &trans
+&trans           &trans       &trans    &trans      &trans                                  &trans     &trans                &trans                 &trans         &trans
             >;
         };
 
         iPad3 {
             display-name = "iPad3";
             bindings = <
-&kp F1  &kp F2  &kp F3  &kp F4  &kp F5  &trans  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &trans
-&kp F6  &kp F7  &kp F8  &kp F9  &kp F10  &trans  &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp RIGHT_COMMAND
-&kp F11  &kp F12  &kp F13  &kp F14  &kp F15  &kp NUMBER_0  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &kp LANGUAGE_2  &kp LANGUAGE_1  &trans  &trans  &trans
-        &trans  &trans  &trans  &trans  &trans    &kp C_BRI_UP  &trans  &kp C_BRI_DN  &trans  &trans
-&trans  &trans  &trans                                                                                    &trans          &trans          &trans
-&kp LG(RBKT)  &kp LG(LBKT)  &trans  &trans  &trans               &kp LG(RBKT)  &kp LG(LBKT)  &trans  &trans  &trans
+&kp F1        &kp F2        &kp F3   &kp F4   &kp F5                         &trans          &kp NUMBER_7    &kp NUMBER_8  &kp NUMBER_9  &trans
+&kp F6        &kp F7        &kp F8   &kp F9   &kp F10                        &trans          &kp NUMBER_4    &kp NUMBER_5  &kp NUMBER_6  &kp RIGHT_COMMAND
+&kp F11       &kp F12       &kp F13  &kp F14  &kp F15                        &kp NUMBER_0    &kp NUMBER_1    &kp NUMBER_2  &kp NUMBER_3  &trans
+&trans        &trans        &trans   &trans   &trans   &trans  &trans        &kp LANGUAGE_2  &kp LANGUAGE_1  &trans        &trans        &trans
+              &trans        &trans   &trans   &trans   &trans  &kp C_BRI_UP  &trans          &kp C_BRI_DN    &trans        &trans
+&trans        &trans        &trans                                                                           &trans        &trans        &trans
+&kp LG(RBKT)  &kp LG(LBKT)  &trans   &trans   &trans                         &kp LG(RBKT)    &kp LG(LBKT)    &trans        &trans        &trans
             >;
         };
 
         iPad4 {
             display-name = "iPad4";
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&kp LS(LG(N3))  &trans  &kp LS(LG(N4))  &trans  &trans    &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-        &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans          &trans  &trans          &trans  &trans                  &trans  &trans  &trans  &trans  &trans
+&kp LS(LG(N3))  &trans  &kp LS(LG(N4))  &trans  &trans                  &trans  &trans  &trans  &trans  &trans
+&trans          &trans  &trans          &trans  &trans                  &trans  &trans  &trans  &trans  &trans
+&trans          &trans  &trans          &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+                &trans  &trans          &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans          &trans  &trans                                                          &trans  &trans  &trans
+&trans          &trans  &trans          &trans  &trans                  &trans  &trans  &trans  &trans  &trans
             >;
         };
 
         Windows0 {
             display-name = "Win0";
             bindings = <
-&kp Q                  &kp W         &kp E                  &kp R                          &kp T                                       &kp Y                     &kp U                 &kp I               &kp O      &kp P
-&shift_a LEFT_SHIFT A  &kp S         &win_alt_d LEFT_ALT D  &f_left_mod LCTRL F            &kp G                                       &kp H                     &j_right_mod LCTRL J  &kp K               &kp L      &mt RIGHT_SHIFT SEMICOLON
-&kp Z                  &kp X         &kp C                  &kp V                          &kp B                                       &kp N                     &kp M                 &kp COMMA           &kp DOT    &kp SLASH
-&kp LEFT_CONTROL  &kp LEFT_ALT  &kp LEFT_GUI  &mkp MB1  &shift_space LEFT_SHIFT SPACE  &lt 13 TAB  &bksp_lt_hp 14 LANG1  &bksp_lt_hp 12 BACKSPACE  &enter_lt 11 ENTER  &lt 15 SINGLE_QUOTE  &kp PLUS  &kp MINUS
-                       &none         &kp RIGHT              &kp DOWN                       &kp LEFT    &kp UP         &kp C_VOL_UP           &kp LS(COMMA)                  &kp C_VOL_DN              &kp LS(DOT)           &kp C_MUTE
-&mkp LCLK              &mkp RCLK     &mkp MCLK                                                                                                                                         &mkp LCLK           &mkp RCLK  &mkp MCLK
-&kp LG(LC(RIGHT))               &kp LG(LC(LEFT))      &kp LG(TAB)            &kp LG(D)                      &pinch_win                                  &kp LG(LC(RIGHT))                   &kp LG(LC(LEFT))              &kp LG(TAB)         &kp LG(D)  &pinch_win
+&kp Q                  &kp W             &kp E                  &kp R                &kp T                                                            &kp Y                     &kp U                 &kp I                &kp O       &kp P
+&shift_a LEFT_SHIFT A  &kp S             &win_alt_d LEFT_ALT D  &f_left_mod LCTRL F  &kp G                                                            &kp H                     &j_right_mod LCTRL J  &kp K                &kp L       &mt RIGHT_SHIFT SEMICOLON
+&kp Z                  &kp X             &kp C                  &kp V                &kp B                                                            &kp N                     &kp M                 &kp COMMA            &kp DOT     &kp SLASH
+&kp LEFT_CONTROL       &kp LEFT_ALT      &kp LEFT_GUI           &mkp MB1             &shift_space LEFT_SHIFT SPACE  &lt 13 TAB  &bksp_lt_hp 14 LANG1  &bksp_lt_hp 12 BACKSPACE  &enter_lt 11 ENTER    &lt 15 SINGLE_QUOTE  &kp PLUS    &kp MINUS
+                       &none             &kp RIGHT              &kp DOWN             &kp LEFT                       &kp UP      &kp C_VOL_UP          &kp LS(COMMA)             &kp C_VOL_DN          &kp LS(DOT)          &kp C_MUTE
+&mkp LCLK              &mkp RCLK         &mkp MCLK                                                                                                                                                    &mkp LCLK            &mkp RCLK   &mkp MCLK
+&kp LG(LC(RIGHT))      &kp LG(LC(LEFT))  &kp LG(TAB)            &kp LG(D)            &pinch_win                                                       &kp LG(LC(RIGHT))         &kp LG(LC(LEFT))      &kp LG(TAB)          &kp LG(D)   &pinch_win
             >;
         };
 
         Windows1 {
             display-name = "Win1";
             bindings = <
-&kp NUMBER_7    &kp NUMBER_8  &kp NUMBER_9  &kp NUMBER_0  &trans                     &kp LC(LS(TAB))  &kp HOME        &kp UP_ARROW    &kp END          &kp LC(TAB)
-&kp NUMBER_4    &kp NUMBER_5  &kp NUMBER_6  &kp LCTRL     &trans                     &kp BACKSPACE    &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp DELETE
-&kp NUMBER_1    &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_0  &trans                     &kp F10          &kp PAGE_UP     &kp F2          &kp PAGE_DOWN    &kp ESCAPE
-&kp LEFT_SHIFT  &trans  &trans  &mkp MB2  &trans  &trans  &trans  &kp F7  &trans  &trans  &trans  &mkp MB2
-                &trans        &trans        &trans        &trans  &trans    &trans   &trans           &trans          &trans          &trans
-&trans          &trans        &trans                                                                                                  &trans           &trans           &trans
-&trans          &trans        &trans        &trans        &trans                     &trans           &trans          &trans          &trans           &trans
+&kp NUMBER_7    &kp NUMBER_8  &kp NUMBER_9  &kp NUMBER_0  &trans                  &kp LC(LS(TAB))  &kp HOME        &kp UP_ARROW    &kp END          &kp LC(TAB)
+&kp NUMBER_4    &kp NUMBER_5  &kp NUMBER_6  &kp LCTRL     &trans                  &kp BACKSPACE    &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp DELETE
+&kp NUMBER_1    &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_0  &trans                  &kp F10          &kp PAGE_UP     &kp F2          &kp PAGE_DOWN    &kp ESCAPE
+&kp LEFT_SHIFT  &trans        &trans        &mkp MB2      &trans  &trans  &trans  &kp F7           &trans          &trans          &trans           &mkp MB2
+                &trans        &trans        &trans        &trans  &trans  &trans  &trans           &trans          &trans          &trans
+&trans          &trans        &trans                                                                               &trans          &trans           &trans
+&trans          &trans        &trans        &trans        &trans                  &trans           &trans          &trans          &trans           &trans
             >;
         };
 
         Windows2 {
             display-name = "Win2";
             bindings = <
-&kp GRAVE  &kp DOUBLE_QUOTES  &kp SINGLE_QUOTE  &kp TILDE  &trans  &kp ASTERISK  &kp CARET  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp BACKSLASH
-&kp EXCLAMATION  &kp AT_SIGN  &kp HASH  &kp DOLLAR  &kp PERCENT  &trans  &kp AMPERSAND  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp MINUS
-&trans  &trans  &kp PLUS  &kp EQUAL  &trans  &trans  &kp PIPE  &kp LEFT_BRACE  &kp RIGHT_BRACE  &kp UNDERSCORE
-&trans           &trans             &trans            &trans      &trans   &trans    &trans    &trans        &trans         &trans                &trans                 &trans
-                 &trans             &trans            &trans      &trans   &trans    &trans    &trans        &trans         &trans                &trans
-&trans           &trans             &trans                                                                                                        &trans                 &trans          &trans
+&kp GRAVE        &kp DOUBLE_QUOTES  &kp SINGLE_QUOTE  &kp TILDE   &trans                       &kp ASTERISK  &kp CARET      &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp BACKSLASH
+&kp EXCLAMATION  &kp AT_SIGN        &kp HASH          &kp DOLLAR  &kp PERCENT                  &trans        &kp AMPERSAND  &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp MINUS
+&trans           &trans             &kp PLUS          &kp EQUAL   &trans                       &trans        &kp PIPE       &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp UNDERSCORE
+&trans           &trans             &trans            &trans      &trans       &trans  &trans  &trans        &trans         &trans                &trans                 &trans
+                 &trans             &trans            &trans      &trans       &trans  &trans  &trans        &trans         &trans                &trans
+&trans           &trans             &trans                                                                                  &trans                &trans                 &trans
 &trans           &trans             &trans            &trans      &trans                       &trans        &trans         &trans                &trans                 &trans
             >;
         };
@@ -418,52 +428,52 @@
         Windows3 {
             display-name = "Win3";
             bindings = <
-&kp F1  &kp F2  &kp F3  &kp F4  &kp F5  &trans  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &trans
-&kp F6  &kp F7  &kp F8  &kp F9  &kp F10  &kp RCTRL  &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp RIGHT_SHIFT
-&kp F11  &kp F12  &kp F13  &kp F14  &kp F15  &kp NUMBER_0  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_0
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-        &trans  &trans  &trans  &trans  &trans    &kp C_BRI_UP  &trans  &kp C_BRI_DN  &trans  &trans
-&trans  &trans   &trans                                                                                   &trans        &trans           &trans
-&mkp MB5  &mkp MB4  &trans  &trans  &trans       &mkp MB5  &mkp MB4  &trans  &trans  &trans
+&kp F1    &kp F2    &kp F3   &kp F4   &kp F5                         &trans        &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &trans
+&kp F6    &kp F7    &kp F8   &kp F9   &kp F10                        &kp RCTRL     &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp RIGHT_SHIFT
+&kp F11   &kp F12   &kp F13  &kp F14  &kp F15                        &kp NUMBER_0  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_0
+&trans    &trans    &trans   &trans   &trans   &trans  &trans        &trans        &trans        &trans        &trans        &trans
+          &trans    &trans   &trans   &trans   &trans  &kp C_BRI_UP  &trans        &kp C_BRI_DN  &trans        &trans
+&trans    &trans    &trans                                                                       &trans        &trans        &trans
+&mkp MB5  &mkp MB4  &trans   &trans   &trans                         &mkp MB5      &mkp MB4      &trans        &trans        &trans
             >;
         };
 
         Windows4 {
             display-name = "Windows4";
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &kp LG(LS(S))  &trans  &kp C_POWER  &trans  &trans  &trans
-&kp LG(L)  &kp C_SLEEP  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-        &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans     &trans       &trans  &trans         &trans                  &trans  &trans       &trans  &trans  &trans
+&trans     &trans       &trans  &kp LG(LS(S))  &trans                  &trans  &kp C_POWER  &trans  &trans  &trans
+&kp LG(L)  &kp C_SLEEP  &trans  &trans         &trans                  &trans  &trans       &trans  &trans  &trans
+&trans     &trans       &trans  &trans         &trans  &trans  &trans  &trans  &trans       &trans  &trans  &trans
+           &trans       &trans  &trans         &trans  &trans  &trans  &trans  &trans       &trans  &trans
+&trans     &trans       &trans                                                              &trans  &trans  &trans
+&trans     &trans       &trans  &trans         &trans                  &trans  &trans       &trans  &trans  &trans
             >;
         };
 
         Bluetooth {
             display-name = "BT";
             bindings = <
-&out OUT_TOG                   &trans                         &trans                         &trans                         &trans                                             &trans   &trans       &trans       &trans       &Bluetooth4
-&zip_dyn_scale ZDS_XY ZDS_INC  &zip_dyn_scale ZDS_XY ZDS_DEC  &zip_dyn_scale ZDS_SC ZDS_INC  &zip_dyn_scale ZDS_SC ZDS_DEC  &zip_dyn_scale ZDS_ALL ZDS_RST                     &trans   &Bluetooth0  &Bluetooth1  &Bluetooth2  &Bluetooth3
-&trans                         &trans                         &trans                         &trans                         &trans                                             &trans   &trans       &trans       &trans       &bt BT_CLR
-&trans                         &trans                         &trans                         &trans                         &trans          &trans    &trans                   &trans   &trans       &trans       &bootloader  &bt BT_CLR_ALL
-                               &trans                         &trans                         &trans                         &trans          &trans    &trans                   &trans   &trans       &trans       &trans
-&trans                         &trans                         &trans                                                                                                                                 &trans       &trans       &trans
-&trans                         &trans                         &trans                         &trans                         &trans                                             &trans   &trans       &trans       &trans       &trans
+&out OUT_TOG                   &trans                         &trans                         &trans                         &trans                                          &trans  &trans       &trans       &trans       &Bluetooth4
+&zip_dyn_scale ZDS_XY ZDS_INC  &zip_dyn_scale ZDS_XY ZDS_DEC  &zip_dyn_scale ZDS_SC ZDS_INC  &zip_dyn_scale ZDS_SC ZDS_DEC  &zip_dyn_scale ZDS_ALL ZDS_RST                  &trans  &Bluetooth0  &Bluetooth1  &Bluetooth2  &Bluetooth3
+&trans                         &trans                         &trans                         &trans                         &trans                                          &trans  &trans       &trans       &trans       &bt BT_CLR
+&trans                         &trans                         &trans                         &trans                         &trans                          &trans  &trans  &trans  &trans       &trans       &bootloader  &bt BT_CLR_ALL
+                               &trans                         &trans                         &trans                         &trans                          &trans  &trans  &trans  &trans       &trans       &trans
+&trans                         &trans                         &trans                                                                                                                             &trans       &trans       &trans
+&trans                         &trans                         &trans                         &trans                         &trans                                          &trans  &trans       &trans       &trans       &trans
             >;
         };
 
         Pinch {
             display-name = "Pinch";
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
         &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans                                                  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &trans
             >;
         };
     };
