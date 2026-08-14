@@ -160,7 +160,7 @@
         status = "disabled";
         device = <&trackpad_split_R>;
         input-processors = <&trackpad_key_behaviors_R>,
-                           <&zip_scroll_snap>,
+                           // <&zip_scroll_snap>,  // TEMP: disabled to test scroll delay
                            <&zip_xy_scaler 1 5>,
                            <&zip_scroll_scaler 1 48>,
                            <&zip_scroll_transform (INPUT_TRANSFORM_X_INVERT | INPUT_TRANSFORM_Y_INVERT)>,
@@ -176,7 +176,7 @@
         lowspeedmode {
             layers = <1>,<2>;
             input-processors =  <&trackpad_key_behaviors_R>,
-                                <&zip_scroll_snap>,
+                                // <&zip_scroll_snap>,  // TEMP: disabled to test scroll delay
                                 <&zip_xy_scaler 1 15>,
                                 <&zip_scroll_scaler 1 160>,
                                 <&zip_scroll_transform (INPUT_TRANSFORM_X_INVERT | INPUT_TRANSFORM_Y_INVERT)>,
@@ -189,7 +189,7 @@
         status = "disabled";
         device = <&trackpad_split_L>;
         input-processors = <&trackpad_key_behaviors_L>,
-                           <&zip_scroll_snap>,
+                           // <&zip_scroll_snap>,  // TEMP: disabled to test scroll delay
                            <&zip_xy_scaler 1 5>,
                            <&zip_scroll_scaler 1 48>,
                            <&zip_scroll_transform (INPUT_TRANSFORM_X_INVERT | INPUT_TRANSFORM_Y_INVERT)>,
@@ -205,7 +205,7 @@
         lowspeedmode {
             layers = <1>,<2>;
             input-processors =  <&trackpad_key_behaviors_L>,
-                                <&zip_scroll_snap>,
+                                // <&zip_scroll_snap>,  // TEMP: disabled to test scroll delay
                                 <&zip_xy_scaler 1 15>,
                                 <&zip_scroll_scaler 1 160>,
                                 <&zip_scroll_transform (INPUT_TRANSFORM_X_INVERT | INPUT_TRANSFORM_Y_INVERT)>,
