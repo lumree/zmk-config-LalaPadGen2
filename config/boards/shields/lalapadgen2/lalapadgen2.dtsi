@@ -155,6 +155,10 @@
         track-remainders;
     };
 
+    zip_scroll_snap: zip_scroll_snap {
+        require-n-samples = <3>;
+    };
+
     trackpad_listener_R: trackpad_listener_R {
         compatible = "zmk,input-listener";
         status = "disabled";
