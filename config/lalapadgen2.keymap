@@ -273,7 +273,7 @@
             display-name = "Mac0";
             bindings = <
 &mt LEFT_CONTROL Q     &kp W         &kp E                  &kp R                       &kp T                                                          &kp Y                    &kp U                         &kp I                &kp O         &kp P
-&shift_a LEFT_SHIFT A  &s_left_mod LC(LEFT_ALT) S  &win_alt_d LEFT_ALT D  &f_left_mod LEFT_COMMAND F  &kp G  &kp H  &j_right_mod RIGHT_COMMAND J  &kp K  &kp L  &mt RIGHT_SHIFT SEMICOLON
+&shift_a LEFT_SHIFT A  &s_left_mod LG(LC(LA(LEFT_SHIFT))) S  &win_alt_d LEFT_ALT D  &f_left_mod LEFT_COMMAND F  &kp G  &kp H  &j_right_mod RIGHT_COMMAND J  &kp K  &kp L  &mt RIGHT_SHIFT SEMICOLON
 &kp Z                  &kp X         &kp C                  &kp V                       &kp B                                                          &kp N                    &kp M                         &kp COMMA            &kp DOT       &kp SLASH
 &kp LEFT_CONTROL  &kp GLOBE  &kp LC(LEFT_ALT)  &mkp MB1  &shift_space LEFT_SHIFT SPACE  &lt 3 TAB  &bksp_lt_hp 4 MINUS  &bksp_lt_hp 2 BACKSPACE  &enter_lt 1 ENTER  &lt 15 SINGLE_QUOTE  &kp PLUS  &kp MINUS
                        &none         &kp RIGHT              &kp DOWN                    &kp LEFT                       &kp UP     &kp C_VOL_UP         &kp LS(COMMA)            &kp C_VOL_DN                  &kp LS(DOT)          &kp C_MUTE
